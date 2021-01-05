@@ -1,12 +1,6 @@
 body, h1 {
-  font-family: 'PT_Serif';
-  src: rl('antonchenko\fonts\PT_Serif') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'PT_Serif', sans-serif;
 }
 p, button {
-    font-family: 'Roboto';
-    src: rl('antonchenko\fonts\Roboto') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Roboto', sans-serif;
 }

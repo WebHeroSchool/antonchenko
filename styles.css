@@ -4,3 +4,56 @@ body, h1 {
 p, button {
     font-family: 'Roboto', sans-serif;
 }
+body {
+  margin: 0;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.logo, .menu {
+  display: inline-block;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 40px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  padding: 0 13px;
+}
+.menu__item:last-child {
+  padding:0;
+}
+.main-section {
+  display:block;
+}
+.main-content__title {
+  margin: auto;
+  width: 30%;
+  max-height: 560px;
+  max-width: 400px;
+  padding: 40px 192px 0px 0px;
+  font-size: 40px;
+}
+.main-content__subtitle {
+  width: 30%;
+  padding: 0 100px 0 0;
+}
+.button {
+  margin: auto;
+  padding: 0 343px 317px 0;
+}
+.image-content {
+  display: flex;
+  padding: 0 197px 0 953px;
+}
+.main-content__title,.image-content {
+    display: inline-block;
+}

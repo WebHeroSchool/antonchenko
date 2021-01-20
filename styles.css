@@ -1,11 +1,12 @@
 body, h1 {
   font-family: 'PT Serif', sans-serif;
 }
-p, button {
+p, a {
     font-family: 'Roboto', sans-serif;
 }
 body {
   margin: 0;
+  height: 100vh;
 }
 .wrapper {
   margin: auto;
@@ -18,19 +19,22 @@ body {
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .logo {
   width: 190px;
-  height: 35px;
+  height: 31px;
   background: url('img/logo.svg');
 }
 .menu {
+  width:388px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 29px;
   font: 500 18px/21px Roboto, arial, helvetica,sans-serif;
   color: #000;
   text-decoration: none;
@@ -47,7 +51,7 @@ body {
     height: 3px;
     background: #0056EC;
     opacity: 0;
-    transition: opacity.5s, width: .5s;
+    transition: opacity .5s, width .5s;
   }
   .menu__item:hover::after{
       position: absolute;
@@ -58,7 +62,7 @@ body {
       height: 3px;
       background: #0056EC;
       opacity: 0;
-      transition: opacity.5s, width: .5s;
+      transition: opacity .5s, width .5s;
     }
   .menu__item:hover{
     opacity: 0.5;
@@ -67,29 +71,52 @@ body {
     opacity: 1;
     width: 100%;
   }
-.main-section {
-  display:block;
+.main {
+  padding: 105px 0;
+  width: 100%;
+  min-width: 657px;
+  background: top right no-repeat url('img/Frame.svg');
+  background-position-y: 32px;
 }
-.main-content__title {
-  margin: auto;
+.main__title {
+  width: 41%;
+  margin: 0 0 34px 0;
+  font: bold 72px/88px pt_serif, arial, helvetica, sans-serif;
+  color: #000;
+}
+.main__title-text_highligh{
+  background: #ECF3FF;
+}
+.main__subtitle {
   width: 30%;
-  max-height: 560px;
-  max-width: 400px;
-  padding: 40px 192px 0px 0px;
-  font-size: 40px;
+  margin: 0 100px 40px 0;
+  font: 500 22px/27px Roboto, arial, helvetica, sans-serif;
 }
-.main-content__subtitle {
-  width: 30%;
-  padding: 0 100px 0 0;
+.main__button {
+  display: inline-block;
+  font: 19px/23px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  padding: 18px 24px;
+  margin: 0 0 0 3px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: .5s;
 }
-.button {
-  margin: auto;
-  padding: 0 343px 317px 0;
+.main__button:hover {
+  opacity: .5;
 }
-.image-content {
+
+footer{
+  margin: 159px auto;
+  margin-bottom: 5px;
+  width: 32px;
   display: flex;
-  padding: 0 197px 0 953px;
+  justify-content: space-between;
 }
-.main-content__title,.image-content {
-    display: inline-block;
+.circle{
+  width: 8px;
+  height: 8px;
+  background: #C8DBFB;
+  opacity: 0.7;
 }

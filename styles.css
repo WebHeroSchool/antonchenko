@@ -130,40 +130,9 @@ body {
        font-size: 29px;
        font-weight: 600;
        text-decoration: none;
+       transition: transform .5s;
     }
     
-    .menu__item_.menu__item__box :hover {
-       background-color: #fff;
-    }
-    
-    #menu__toggle:checked ~ .menu__btn > span {
-       transform: rotate(45deg);
-    }
-     #menu__toggle:checked ~ .menu__btn > span::before {
-       top: 0;
-       transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-       top: 0;
-       transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-       visibility: visible;
-       left: 0;
-    }
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-       transition-duration: .25s;
-    }
-    .menu__box {
-       transition-duration: .25s;
-    }
-    .menu__item__box {
-       transition-duration: .25s;
-    }
-
-
 .main {
   padding: 105px 0;
   width: 100%;
@@ -196,10 +165,24 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: .5s;
+
+  animation-name: blue-buttom;
+  animation-duration: 1s;
+}
+@keyframes blue-buttom {
+  from {
+    margin-right: 25%;
+    width: 0%;
+  }
+  to {
+    margin-right: 10%;
+    width: 18%;
+  }
 }
 .main__button:hover {
   opacity: .5;
 }
+
 
 footer{
   margin: 159px auto;
@@ -334,4 +317,35 @@ footer{
   footer {
     display: none;
   }
+
+ #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item__box {
+  transition-duration: .25s;
+}
+.menu__item__box:hover {
+  background-color: rgb(151, 152, 155);
+}
+
 }

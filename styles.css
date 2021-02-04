@@ -110,16 +110,16 @@ body {
   transition: .5s;
 
   animation-name: blue-buttom;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 @keyframes blue-buttom {
   from {
-    margin-right: 25%;
+    margin-right: 15%;
     width: 0%;
   }
   to {
-    margin-right: 10%;
-    width: 18%;
+    margin-right: 0%;
+    width: 15%;
   }
 }
 .main__button:hover {
@@ -192,12 +192,12 @@ footer{
  }
  @keyframes blue-buttom {
    from {
-     margin-right: 20%;
+     margin-right: 15%;
      width: 0%;
    }
    to {
-     margin-right: 10%;
-     width: 18%;
+     margin-right: 0%;
+     width: 15%;
    }
  }
  footer {
@@ -223,7 +223,7 @@ footer{
 }
   .menu__button {
     animation-name: blue-buttom;
-    animation-duration: 1s;
+    animation-duration: 2s;
   }
     @keyframes blue-buttom {
       from {

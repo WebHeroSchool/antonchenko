@@ -265,7 +265,6 @@ footer{
     width: 36px;
     height: 35px;
     background: url('img/minilogo.svg');
-    display: no-repeat;
   }
   .main__title {
     width: 100%;

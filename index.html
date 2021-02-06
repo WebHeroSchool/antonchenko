@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html lang="ru">
+  <html lang=en>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,16 @@
      <div class="wrapper">
      <header class="header">
        <div class="logo"> </div>
-       <div class="hamburger-menu">
+      
+      <nav class="menu">
+        <a class="menu__item" href='#'>start</a>
+        <a class="menu__item menu__item_active" href='#'>services</a>
+        <a class="menu__item" href='#'>about</a>
+        <a class="menu__item" href='#'>blog</a>
+        <a class="menu__item" href='#'>contact us</a> 
+      </nav>
+
+      <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
           <span></span>
@@ -25,14 +34,7 @@
           <li><a class="menu__item__box" href="#">contact us</a></li>
         </ul>
       </div>
-      
-      <nav class="menu">
-        <a class="menu__item" href='#'>start</a>
-        <a class="menu__item menu__item_active" href='#'>services</a>
-        <a class="menu__item" href='#'>about</a>
-        <a class="menu__item" href='#'>blog</a>
-        <a class="menu__item" href='#'>contact us</a> 
-      </nav>
+
      </header>
 
      <section class="main">
@@ -45,7 +47,7 @@
          <p class="main__subtitle"> 
            I help tech startups design better digital products without hiring a full-time designer
           </p>
-         <a class="main__button" href="#" type="button"> 
+         <a class="main__button" href="#"> 
            Schedule free consultation
          </a>
      </section>
@@ -54,6 +56,6 @@
       <div class="circle"> </div> 
       <div class="circle"> </div> 
     </footer>
-    </div>
-    </body>
-    </html>
+     </div>
+  </body>
+  </html>

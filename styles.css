@@ -250,6 +250,7 @@ footer{
   .main {
     padding: 92px 0;
     min-width: 74%;
+    height: 100vh;
     text-align: center;
     background-size: 85%;
     background-position: top center;
@@ -360,8 +361,8 @@ footer{
     font: 30px/39px pt_serif, arial, helvetica, sans-serif;
   }
   .main__subtitle {
-    width: 76%;
-    margin: 0 43px 25px 0;
+    width: 79%;
+    margin: 0 0 25px 38px;
     font: bold 16px/19px Roboto, arial, helvetica, sans-serif;
   }
   .main__button {
@@ -376,83 +377,13 @@ footer{
   animation: none;
 }
 }
-@media (max-width: 768px) {
-  .main {
-    height: 100vh;
-  }
+@media (min-width: 412px) {
   .main__title {
-    margin-top: 32%;
-    font: 37px/46px pt_serif, arial, helvetica, sans-serif;
+    margin-top: 15%;
   }
-  .main__subtitle {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 6%;
-    font: bold 21px/25px Roboto, arial, helvetica, sans-serif;
-  }
-  .main__button {
-    padding: 20px 25px;
-    font: bold 20px/25px Roboto, arial, helvetica, sans-serif;
-  }
-  }
-
-@media (max-width: 748px) {
-.main {
-  height: 100vh;
 }
-.main__title {
-  margin-top: 32%;
-  font: 37px/46px pt_serif, arial, helvetica, sans-serif;
-}
-.main__subtitle {
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 6%;
-  font: bold 21px/25px Roboto, arial, helvetica, sans-serif;
-}
-.main__button {
-  padding: 20px 25px;
-  font: bold 20px/25px Roboto, arial, helvetica, sans-serif;
-}
-}
-@media (max-width: 637px) {
+@media (min-width: 550px) {
   .main__title {
-   margin-top: 37%;
- }
- .menu__box {
-   width: 82%;
- }
- .menu__item__box {
-   font-size: 31px;
- }
- }
-@media (max-width: 603px) {
-  .wrapper {
-    width: 77%;
-    margin: 0 auto;
-  }
-   .main {
-    height: 100vh;
-  }
- .main__title {
-    width: 100%;
     margin-top: 20%;
-    font: 36px/49px pt_serif, arial, helvetica, sans-serif;
-  }
-  .main__subtitle {
-    width: 93%;
-    margin: 0 20px;
-    font: bold 20px/22px Roboto, arial, helvetica, sans-serif;
-  }
-  .main__button {
-    margin-top: 30px;
-    padding: 15px 30px;
-    font: bold 18px/25px Roboto, arial, helvetica, sans-serif;
-  }
-  .menu__box {
-    width: 82%;
-  }
-  .menu__item__box {
-    font-size: 36px;
   }
 }

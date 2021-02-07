@@ -237,7 +237,7 @@ footer{
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header{
     margin-bottom: 4px;
     padding: 24px 0px;
@@ -250,6 +250,7 @@ footer{
   .main {
     padding: 92px 0;
     min-width: 74%;
+    height: 100vh;
     text-align: center;
     background-size: 85%;
     background-position: top center;
@@ -265,25 +266,6 @@ footer{
     width: 36px;
     height: 35px;
     background: url('img/minilogo.svg');
-  }
-  .main__title {
-    width: 100%;
-    padding: 169px 0px 33px 2px;
-    margin: 0 auto;
-    font: 30px/39px pt_serif, arial, helvetica, sans-serif;
-}
-  .main__subtitle {
-    width: 76%;
-    margin: 0 43px 25px;
-    font: bold 16px/19px Roboto, arial, helvetica, sans-serif;
-  }
-  .main__button {
-    margin: 1px 0px;
-    padding: 14px 20px;
-    font: bold 14px/16px Roboto, arial, helvetica, sans-serif;
-  }
-  footer {
-    display: none;
   }
   #menu__toggle {
     opacity: 0;
@@ -337,7 +319,7 @@ footer{
       padding: 13px 21px;
       color: #000;
       font-family: 'Roboto', sans-serif;
-      font-size: 29px;
+      font-size: 38px;
       font-weight: 600;
       text-decoration: none;
       transition: transform .5s;
@@ -372,7 +354,36 @@ footer{
 .menu__item__box:hover {
   background-color: rgb(151, 152, 155);
 }
+  .main__title {
+    width: 100%;
+    padding: 169px 0px 33px 0;
+    margin: 0 auto;
+    font: 30px/39px pt_serif, arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 79%;
+    margin: 0 0 25px 38px;
+    font: bold 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__button {
+    padding: 14px 20px;
+    font: bold 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+  footer {
+    display: none;
+  }
+  
 .main__button {
   animation: none;
 }
+}
+@media (min-width: 412px) {
+  .main__title {
+    margin-top: 15%;
+  }
+}
+@media (min-width: 550px) {
+  .main__title {
+    margin-top: 20%;
+  }
 }

@@ -379,11 +379,29 @@ footer{
 }
 @media (min-width: 412px) {
   .main__title {
-    margin-top: 15%;
+    margin-top: 21%;
   }
 }
 @media (min-width: 550px) {
   .main__title {
-    margin-top: 20%;
+    margin-top: 24%;
   }
+}
+@media (min-width: 600px) {
+  .main__title {
+      padding: 169px 0px 25px 0;
+  }
+  .main__subtitle {
+    margin: 0 0 17px 38px;
+  }
+  .main {
+    background-size: 72%;
+  }
+}
+@media (min-width: 700px) {
+  .main {
+    background-size: 72%;
+  }
+
+
 }

@@ -247,14 +247,6 @@ footer{
     height: 100vh;
     width: 88%;
   }
-  .main {
-    padding: 92px 0;
-    min-width: 74%;
-    height: 100vh;
-    text-align: center;
-    background-size: 85%;
-    background-position: top center;
-  }
   .menu {
     display: none;
   }
@@ -354,15 +346,23 @@ footer{
 .menu__item__box:hover {
   background-color: rgb(151, 152, 155);
 }
+ .main {
+  padding: 23% 0;
+  min-width: 74%;
+  height: 100vh;
+  text-align: center;
+  background-size: 61%;
+  background-position: top center;
+}
   .main__title {
     width: 100%;
-    padding: 169px 0px 33px 0;
+    padding: 31% 0 3% 0;
     margin: 0 auto;
     font: 30px/39px pt_serif, arial, helvetica, sans-serif;
   }
   .main__subtitle {
     width: 79%;
-    margin: 0 0 25px 38px;
+    margin: 0 12% 4% 12%;
     font: bold 16px/19px Roboto, arial, helvetica, sans-serif;
   }
   .main__button {
@@ -377,31 +377,37 @@ footer{
   animation: none;
 }
 }
-@media (min-width: 412px) {
-  .main__title {
-    margin-top: 21%;
-  }
-}
-@media (min-width: 550px) {
-  .main__title {
-    margin-top: 24%;
-  }
-}
-@media (min-width: 600px) {
-  .main__title {
-      padding: 169px 0px 25px 0;
-  }
-  .main__subtitle {
-    margin: 0 0 17px 38px;
-  }
-  .main {
-    background-size: 72%;
-  }
-}
-@media (min-width: 700px) {
-  .main {
-    background-size: 72%;
-  }
 
-
-}
+@media (max-width:375px) {
+  .main {
+    padding: 23% 0;
+    min-width: 74%;
+    height: 100vh;
+    text-align: center;
+    background-size: 85%;
+    background-position: top center;
+  }
+    .main__title {
+      width: 100%;
+      padding: 169px 0px 33px 3px;
+      margin: 0 auto;
+      font: 30px/39px pt_serif, arial, helvetica, sans-serif;
+    }
+    .main__subtitle {
+      width: 79%;
+      margin: 0 12% 8% 12%;
+      font: bold 16px/19px Roboto, arial, helvetica, sans-serif;
+    }
+    .main__button {
+      padding: 14px 20px;
+      font: bold 14px/16px Roboto, arial, helvetica, sans-serif;
+    }
+    footer {
+      display: none;
+    }
+    
+  .main__button {
+    animation: none;
+  }
+  }
+  
